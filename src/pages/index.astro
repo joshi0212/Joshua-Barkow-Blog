@@ -12,39 +12,193 @@ import { SITE_TITLE, SITE_DESCRIPTION } from '../consts';
 	</head>
 	<body>
 		<Header />
-		<main>
-			<h1>🧑‍🚀 Hello, Astronaut!</h1>
-			<p>
-				Welcome to the official <a href="https://astro.build/">Astro</a> blog starter template. This
-				template serves as a lightweight, minimally-styled starting point for anyone looking to build
-				a personal website, blog, or portfolio with Astro.
+		<main >
+			<div class="heroDiv">
+				<div class="contentWrapper">
+			<h1 class="title1">Lernen <br> &emsp;lernen</h1>
+			<p class="heroText">
+				Wenn ihr Schüler, Lehrer oder einfach Lernfreunde seid, dann seid ihr hier genau richtig.
+				In diesem Blog geht es darum, wie man lernt, ohne die Lust daran zu verlieren.
+
 			</p>
-			<p>
-				This template comes with a few integrations already configured in your
-				<code>astro.config.mjs</code> file. You can customize your setup with
-				<a href="https://astro.build/integrations">Astro Integrations</a> to add tools like Tailwind,
-				React, or Vue to your project.
+			<button class="blogButton">Zum Blog</button>
+			</div>
+			</div>
+			<div class="secondDiv">
+				<div class="waveOne">
+					<svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
+						<path d="M985.66,92.83C906.67,72,823.78,31,743.84,14.19c-82.26-17.34-168.06-16.33-250.45.39-57.84,11.73-114,31.07-172,41.86A600.21,600.21,0,0,1,0,27.35V120H1200V95.8C1132.19,118.92,1055.71,111.31,985.66,92.83Z" class="shape-fill"></path>
+					</svg>
+				</div>
+				<div class="contentWrapper">
+			<h2 class="title2">Bereit, für neue Möglichkeiten zu lernen?</h2>
+			<p class="secondText">
+				Dann sei gespannt auf neue Posts.
+				Ich bin Joshi und habe dieses Jahr die Schule verlassen, da ich mich voll und ganz
+				dem verbesser des Lernen widmen wollte. Meine Leidenschaft ist es, neue Lernmaterialien zu finden
+				und zu erschaffen.
 			</p>
-			<p>Here are a few ideas on how to get started with the template:</p>
-			<ul>
-				<li>Edit this page in <code>src/pages/index.astro</code></li>
-				<li>Edit the site header items in <code>src/components/Header.astro</code></li>
-				<li>Add your name to the footer in <code>src/components/Footer.astro</code></li>
-				<li>Check out the included blog posts in <code>src/content/blog/</code></li>
-				<li>Customize the blog post page layout in <code>src/layouts/BlogPost.astro</code></li>
-			</ul>
-			<p>
-				Have fun! If you get stuck, remember to <a href="https://docs.astro.build/"
-					>read the docs
-				</a> or <a href="https://astro.build/chat">join us on Discord</a> to ask questions.
-			</p>
-			<p>
-				Looking for a blog template with a bit more personality? Check out <a
-					href="https://github.com/Charca/astro-blog-template"
-					>astro-blog-template
-				</a> by <a href="https://twitter.com/Charca">Maxi Ferreira</a>.
-			</p>
+			</div>
+			</div>
+			<div class="thirdDiv">
+				<div class="waveTwo">
+					<svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
+						<path d="M321.39,56.44c58-10.79,114.16-30.13,172-41.86,82.39-16.72,168.19-17.73,250.45-.39C823.78,31,906.67,72,985.66,92.83c70.05,18.48,146.53,26.09,214.34,3V0H0V27.35A600.21,600.21,0,0,0,321.39,56.44Z" class="shape-fill"></path>
+					</svg>
+				</div>
+				<div class="contentWrapper">
+				<h2 class="title3">Darum geht es in diesem Blog:</h2>
+				<ul class="list">
+					<li>Lernen mit Spaß</li>
+					<li>Lernmaterialien</code></li>
+					<li>Lehren mit Sinn</code></li>
+					<li>Eigenständiges Denken entwickeln</code></li>
+				</ul>
+			</div>
+		</div>
 		</main>
 		<Footer />
 	</body>
+	<style>
+
+
+		.contentWrapper{
+			padding: 3em;
+			display: flex;
+			flex-direction: column;
+			align-items: left;
+			justify-content: center;
+			color: white;
+			flex-wrap: wrap;
+			max-width: 60em;
+			margin: auto;
+		}
+		.heroDiv{
+			background-color: var(--accent2);
+		}
+		.title1{
+			color: white;
+			font-size: 5em;
+			align-self: center;
+		}
+
+		.heroText{
+			max-width: 40em;
+			align-self: center;
+			text-align: center;
+		}
+
+
+		.secondDiv{
+			background-color: var(--gray);
+			position: relative;
+			padding-top: 15em;
+		}
+
+		.title2{
+			color: white;
+		}
+
+		.secondText{
+			max-width: 30em;
+		}
+
+		.thirdDiv{
+			background-color: var(--accent);
+			position: relative;
+			padding-top: 10em;
+		}
+
+		.title3{
+			color: white;
+		}
+
+		.list{
+			display: flex;
+			flex-direction: column;
+			justify-content: center;
+			align-items: left;
+			font-size: 1.5em;
+		}
+
+		.blogButton{
+			width: 10em;
+			align-self: center;
+		}
+
+
+
+
+
+		.waveOne {
+    		position: absolute;
+    		top: 0;
+    		left: 0;
+    		width: 100%;
+    		overflow: hidden;
+    		line-height: 0;
+    		transform: rotate(180deg);
+		}
+
+		.waveOne svg {
+    		position: relative;
+    		display: block;
+    		width: calc(115% + 1.3px);
+    		height: 162px;
+		}
+
+.waveOne .shape-fill {
+    fill: var(--accent2);
+}
+
+
+.waveTwo {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+}
+
+.waveTwo svg {
+    position: relative;
+    display: block;
+    width: calc(115% + 1.3px);
+    height: 162px;
+}
+
+.waveTwo .shape-fill {
+    fill: var(--gray);
+}
+
+/** For mobile devices **/
+@media (max-width: 767px) {
+    .waveTwo svg {
+        width: calc(115% + 1.3px);
+        height: 145px;
+    }
+	.waveOne svg {
+        width: calc(115% + 1.3px);
+        height: 145px;
+    }
+	.contentWrapper{
+		padding: 1em;
+	}
+	.title1{
+		font-size: 3rem;
+	}
+
+	.title2{
+		font-size: 2rem;
+	}
+
+	.title3{
+		font-size: 2rem;
+	}
+	.list{
+		font-size: 1.5rem;
+	}
+}
+	</style>
 </html>
