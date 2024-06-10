@@ -21,7 +21,7 @@ import { SITE_TITLE, SITE_DESCRIPTION } from '../consts';
 				In diesem Blog geht es darum, wie man lernt, ohne die Lust daran zu verlieren.
 
 			</p>
-			<button class="blogButton">Zum Blog</button>
+			<a class="blogLink" href="/blog"> <button class="blogButton" >Zum Blog</button> </a>
 			</div>
 			</div>
 			<div class="secondDiv">
@@ -87,6 +87,13 @@ import { SITE_TITLE, SITE_DESCRIPTION } from '../consts';
 			align-self: center;
 			text-align: center;
 		}
+		.blogButton{
+			width: 10em;
+
+		}
+		.blogLink{
+			align-self: center;
+		}
 
 
 		.secondDiv{
@@ -121,10 +128,7 @@ import { SITE_TITLE, SITE_DESCRIPTION } from '../consts';
 			font-size: 1.5em;
 		}
 
-		.blogButton{
-			width: 10em;
-			align-self: center;
-		}
+
 
 
 
