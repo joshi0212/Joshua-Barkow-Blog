@@ -4,6 +4,13 @@ const today = new Date();
 
 <footer>
 	&copy; {today.getFullYear()} Joshua Barkow. All rights reserved.
+	<div class="rechtlichesDiv">
+		<a href="/impressum">Impressum</a>
+		<a href="/datenschutz">Datenschutz</a>
+	</div>
+	
+	
+	
 	{/* <div class="social-links">
 		 <a href="https://m.webtoo.ls/@astro" target="_blank">
 			<span class="sr-only">Folge Mr_Barkow auf Youtube</span>
@@ -41,8 +48,8 @@ const today = new Date();
 </footer>
 <style>
 	footer {
-		padding: 2em 1em 6em 1em;
-		background: linear-gradient(var(--gray-gradient)) no-repeat;
+		padding: 4em 1em 4em 1em;
+		background: rgb(134, 134, 134);
 		color: rgb(var(--gray));
 		text-align: center;
 	}
@@ -58,5 +65,9 @@ const today = new Date();
 	}
 	.social-links a:hover {
 		color: rgb(var(--gray-dark));
+	}
+	.rechtlichesDiv a{
+		color: rgb(var(--gray));
+		font-size: 1em;
 	}
 </style>
